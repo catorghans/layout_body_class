@@ -9,7 +9,7 @@ function layout_body_class_preprocess_page(&$variables) {
   // Check if a layout is active.
   if (!empty($layout->name)) {
     // Add the layout machine name as a class to the body tag.
-    $variables['classes'][] = 'layout-' . drupal_clean_css_identifier($layout->name);
+    $variables['classes'][] = 'layout-' . backdrop_clean_css_identifier($layout->name);
   }
 }
 
